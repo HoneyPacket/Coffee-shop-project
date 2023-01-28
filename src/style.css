@@ -1,0 +1,151 @@
+body{
+	margin: 0%;
+	padding: 0%;
+	background-color: antiquewhite;
+	color: black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 1.1rem;
+	}
+
+#header{
+	background-image: url('../imgs/pexels-photo-683039.jpeg');
+	height: 55em;
+	margin-top: 0%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#navBar{
+	color: black;
+	list-style-type: none;
+	display: flex;
+	overflow: hidden;
+	float: right;
+}
+
+#navBar > li{
+	padding: 0.7rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #000;
+	font-size: 1.3rem;
+}
+
+#navBar > li > a{
+	color: antiquewhite;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+#navBar > li > a:hover{
+	transition: 0.3s;
+	color:#eb813b ; 
+}
+
+/*about section*/
+#aboutSec{
+	display: flex;
+	max-width: 80rem;
+	margin: auto;
+}
+
+#aboutPic{
+	width: 30rem;
+	position: relative;
+	display: block;
+	margin: 3rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.171), 0 6px 20px 0 rgba(0, 0, 0, 0.151);
+}
+
+#aboutTxt{
+	padding: 2rem;
+}
+
+#aboutTxt > h1{
+	border-bottom: solid #9f4e15;
+	display: inline-flex;
+}
+
+@media(max-width: 950px){
+	#aboutSec{
+		display: inline-block;
+	}
+
+	#aboutPic{
+		margin: auto;
+		margin-top: 2rem;
+		display: block;
+		position: relative;
+		width: 70%;
+	}
+}
+
+
+/*lounge section*/
+#loungeSec{
+	max-width: 75rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	text-align: center;
+	margin: auto;
+	position: relative;
+
+	
+}
+#loungeSec > h1{
+	border-bottom: solid #9f4e15;
+	display: inline-flex;
+}
+
+.imgCards{
+	margin: auto;
+	position: relative;
+	width: 14rem;
+	height: 14rem;
+}
+
+
+/*coffee bean section*/
+#beanSec{
+	background-color: darkgoldenrod;
+	background-image: url('../imgs/cafe.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 50rem;
+	display: flex;
+}
+
+#beanFluff{
+	background-color: #261f18;
+	color: antiquewhite;
+	max-width: 25rem;
+	margin-right: 1rem;
+	margin-top: 3rem;
+	margin-left: 45%;
+	margin-bottom: 1rem;
+	position: relative;
+	padding: 3rem;
+	justify-content: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.486), 0 6px 20px 0 rgba(0, 0, 0, 0.479);
+}
+
+@media(max-width: 800px){
+#beanSec{
+	display: flex;
+	height: auto;
+}
+
+#beanFluff{
+	margin: auto;
+	width: 50%;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+}
+
+/*footer*/
+footer{
+	background-color: #261f18;
+	height: 15rem;
+}
