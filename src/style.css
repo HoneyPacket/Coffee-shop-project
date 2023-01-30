@@ -107,6 +107,7 @@ body{
 
 /*coffee bean section*/
 #beanSec{
+	margin-top: 5rem;
 	background-color: darkgoldenrod;
 	background-image: url('../imgs/cafe.jpg');
 	background-repeat: no-repeat;
@@ -123,7 +124,7 @@ body{
 	margin-right: 1rem;
 	margin-top: 3rem;
 	margin-left: 45%;
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 	position: relative;
 	padding: 3rem;
 	justify-content: center;
@@ -147,5 +148,40 @@ body{
 /*footer*/
 footer{
 	background-color: #261f18;
-	height: 15rem;
+	min-height: 11rem;
+}
+
+#footContainer{
+	color: antiquewhite;
+	display: flex;
+	position: relative;
+	margin: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	flex-wrap: wrap;
+	max-width: 70rem;
+}
+
+.footRow{
+	min-width: 10rem;
+	min-height: 10rem;
+	margin: auto;
+}
+
+.footRow > h3{
+	text-align: center;
+}
+
+.footRow > ul{
+	list-style: none;
+}
+
+#emailLink{
+	color: #eb813b;
+	transition: 0.2s;
+}
+
+#emailLink:hover{
+	color: #9f4e15;
+	transition: 0.2s;
 }
