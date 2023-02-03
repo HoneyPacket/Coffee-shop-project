@@ -4,23 +4,40 @@
 		<title>Coffee Shop</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="src/script.js"></script>	
+		<script defer src="src/script.js"></script>	
 		<link href="src/style.css" rel="stylesheet">
 		<link rel="shortcut icon" href="imgs/coffeeIcon.png" type="image/png">
 	</head>
 	<body>
 		<div id="header">
 		<!--Navigation bar	-->
-			<nav>
-				<ul id="navBar">
-					<li><a href="">Home</a></li>	
-					<li><a href="">About</a></li>	
-					<li><a href="">Menu</a></li>	
-					<li><a href="">Contact</a></li>	
-					<li><a href="">Locations</a></li>	
-				</ul>
-			</nav>
-		</div>
+		<div id="navbar"></div>
+ <div class="navbarLinks">
+                <ul>
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Menu</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>Locations</a></li>
+                </ul>
+            </div>
+
+			
+  <!-- hamburger menu icon -->
+            <a href="#" class="hamburgerMenu">
+                <span class="ham"></span>
+                <span class="ham"></span>
+                <span class="ham"></span>
+            </a>
+
+			<div id="logoAndText">
+			<p>C o f f e e</p>
+			<img src="/imgs/coffeePic.png" id="headerCoffeeImg" alt="coffeeImage">
+			<p>S h o p</p>
+			</div>
+    
+        </div>
+
 
 		<!--About section-->
 		<div id="aboutSec">

@@ -42,6 +42,16 @@ body{
 	color:#eb813b ; 
 }
 
+#headerCoffeeImg{
+	height: 3rem;
+}
+
+#logoAndText{
+	background-color: #261f18;
+	display: flex;
+	margin: auto;
+}
+
 /*about section*/
 #aboutSec{
 	display: flex;
@@ -184,4 +194,89 @@ footer{
 #emailLink:hover{
 	color: #9f4e15;
 	transition: 0.2s;
+}
+
+
+
+
+
+
+
+/* ////////////// */
+/* ////////////// */
+/* ////////////// */
+/* header navbar */
+
+#navbar{
+    align-items: center;
+    background-color: #00000038;
+}
+
+.navbarLinks ul{
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+	float: right;
+}
+
+.navbarLinks li{
+    list-style: none;
+	cursor: pointer;
+}
+
+.navbarLinks li a{
+    text-decoration: none;
+    padding: 1.5rem 1rem;
+    display: block;
+    color: antiquewhite;
+    font-size: 1rem;
+    font-weight: 900;
+    transition: 0.2s;
+	margin: 0%;
+}
+
+.navbarLinks li a:hover{
+    color: #eb813b;
+    transition: 0.2s;
+}
+
+/* hamburger icon */
+.hamburgerMenu{
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+}
+
+.hamburgerMenu .ham{
+    height: 3px;
+    width: 100%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+/*  */
+@media (max-width: 600px){
+    .hamburgerMenu{
+        display: flex;
+    }
+    .navbarLinks{
+        display: none;
+        width: 100%;
+    }
+    .navbarLinks ul{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbarLinks.active{
+        display: flex;
+    }
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
