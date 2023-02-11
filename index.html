@@ -8,36 +8,28 @@
 		<link href="src/style.css" rel="stylesheet">
 		<link rel="shortcut icon" href="imgs/coffeeIcon.png" type="image/png">
 	</head>
-	<body>
-		<div id="header">
+<body>
+	<div id="header">
 		<!--Navigation bar	-->
-		<div id="navbar">
- <div class="navbarLinks">
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Menu</a></li>
-                    <li><a>Contact</a></li>
-                    <li><a>Locations</a></li>
-                </ul>
-            </div>
-</div>
-			
-  <!-- hamburger menu icon -->
-            <a href="#" class="hamburgerMenu">
-                <span class="ham"></span>
-                <span class="ham"></span>
-                <span class="ham"></span>
-            </a>
+	<div id="navbar">
+		<div class="btn-toggle-nav" onclick="toggleNav()"></div>
+			<img id="navBarImage" src="/imgs/mainHeadLogo.png" alt="">
 
+ 
+	</div>
 
-			<img id="headImg" src="/imgs/mainHeadLogo.png" alt="coffeeShopLogo">
+	<aside class="nav-sidebar">
+		<ul>
+			<li><a onclick="toggleNav()" href="#">Close</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Menu</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact us</a></li>
+			<li><a href="#">Locations</a></li>
+		</ul>
+	</aside>
 
-			<!-- <div id="logoAndText">
-			<p>C o f f e e</p>
-			<img src="/imgs/coffeePic.png" id="headerCoffeeImg" alt="coffeeImage">
-			<p>S h o p</p>
-			</div> -->
+			<!-- <img id="headImg" src="/imgs/mainHeadLogo.png" alt="coffeeShopLogo"> -->
     
         </div>
 
