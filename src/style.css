@@ -31,8 +31,8 @@ body{
 	margin-right: auto;
 	display: flex;
 	padding: 0%;
-	width: 100%;
-	max-width: 60rem;
+	width: 70%;
+	max-width: 50rem;
 	min-width: none;
 	top: 0%;
 
@@ -199,15 +199,13 @@ footer{
 
 /* navbar */
 .btn-toggle-nav{
-    width: 40px;
-    height: 40px;
-    background-color: #cc241d;
+    width: 50px;
+    height: 50px;
     background-image: url('../imgs/hamImg.png');
     background-repeat: no-repeat;
     background-size: 80%;
     cursor: pointer;
     background-position: center;
-    border: #fbf1c7 solid 2px;
     margin: 0.5rem;
     transition: 0.2s;
     display: inline-flex;
@@ -216,8 +214,30 @@ footer{
 
 .btn-toggle-nav:hover{
     transition: 0.2s;
-    background-color: #9d0006;
+    background-color: #00000021;
 }
+
+
+#nav-sidebar-close{
+	float: right;
+	position: relative;
+	display:inline-block;
+	width: 2rem;
+	margin-right: 1rem;
+	transition: all 0.3s ease-in-out;
+	visibility: hidden;
+	overflow: hidden;
+	opacity: 0;
+	padding: 0.5rem;
+}
+
+#nav-sidebar-close:hover{
+	transition: 0.3s;
+	background-color: #00000010;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
 
 .nav-sidebar{
     position: absolute;
@@ -244,9 +264,13 @@ footer{
 
 .nav-sidebar ul li a{
     display: block;
-    height: 60px;
+    height: 70px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     color: black;
     opacity: 0;
+}
+
+.nav-sidebar ul li a:hover{
+	color: #530c00;
 }
