@@ -6,11 +6,26 @@
         <link rel="stylesheet" href="storestyle.css"/>
         <link rel="stylesheet" href="../src/style.css">
         <script defer src="store.js"></script>
+        <script src="../src/script.js"></script>
     </head>
     <body>
-<button><a href="../index.html">Home</a></button>
 
+<!--Navigation bar	-->
+<div id="navbar">
+    <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+    
+    
+</div>
 
+<aside class="nav-sidebar">
+<ul>
+    <img id="nav-sidebar-close" onclick="toggleNav()" src="../imgs/closeMenuImg.png"></img>
+    <li><a href="#" onclick="toggleNav()"></a></li>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="#">Store</a></li>
+    <li><a href="#">About</a></li>
+</ul>
+</aside>
 
 
 

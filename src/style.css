@@ -17,12 +17,16 @@ body{
 	position: relative;
 }
 
+
 #navbar{
 	/* background-color: #cc241d; */
 	margin: 0%;
 	padding: 0%;
 	height: 6rem;
+	transition: 0.3s;
 }
+
+
 
 #navBarImage{
 	/* margin: 0%; */
