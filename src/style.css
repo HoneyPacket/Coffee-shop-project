@@ -42,6 +42,29 @@ body{
 
 }
 
+a{
+	text-decoration: none;
+}
+
+#onlineStoreBtn{
+	background-color: #eb813b;
+	/* right: 45%; */
+	margin: auto;
+	display: block;
+	/* position: absolute; */
+	border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    transition: 0.2s;
+	padding: 1em 1em;
+	font-size: large;
+}
+
+#onlineStoreBtn:hover {
+    transition: 0.3s;
+    background-color: #9f4e15;
+}
+
 
 
 /*about section*/

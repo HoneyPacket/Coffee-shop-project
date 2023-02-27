@@ -28,6 +28,7 @@ function addToCartClicked(event){
     let imgSrc = shopItem.getElementsByClassName('shop-item-image')[0].src
     addItemToCart(title, price, imgSrc)
     updateCartTotal()
+    cartImg.src = "Images/shoppingCartItem.png"
 }
 
 function addItemToCart(title, price, imgSrc){
@@ -97,10 +98,11 @@ function updateCartTotal(){
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total;
+    cartTotalPrice.innerText = '$' + total;
 }
 
 
-let cartTotalPrice = document.getElementsByClassName('cart-total-price')[0]
+let cartTotalPrice = document.getElementsByClassName('cart-total-price2')[0]
 
 
 
@@ -113,15 +115,27 @@ document.getElementsByClassName('btn-purchase')[0].addEventListener('click', fun
       }   
       else {
         alert("There is nothing in your cart!");
+        cartImg.src = "Images/shoppingCart.png";
       }
 })
 
+let cartItems = document.getElementsByClassName('cart-items')[0]
 function purchasedClicked(){
 
     alert('Purchase Success!')
-    let cartItems = document.getElementsByClassName('cart-items')[0]
+    
     while(cartItems.hasChildNodes()){
         cartItems.removeChild(cartItems.firstChild)
     }
     updateCartTotal()
+    cartImg.src = "Images/shoppingCart.png";
 }
+
+
+//cart icon
+const cartImg = document.getElementById('shoppingCartIcon');
+
+
+cartImg.addEventListener('click', ()=>{
+    cartImg.src = "Images/shoppingCart.png";
+})

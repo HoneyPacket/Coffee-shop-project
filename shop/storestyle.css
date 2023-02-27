@@ -3,6 +3,21 @@ body {
     padding: 0;
 }
 
+/* shopping cart icon */
+#shoppingCartIcon{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+#fixedCart{
+    right: 0;
+    position: fixed;
+    margin-right: 1rem;
+    font-size: small;
+}
+
+
+
 
 .content-section {
     margin: 1em;
@@ -14,7 +29,6 @@ body {
     padding: 0 1.5em;
 }
 .section-header {
-    /* font-family: "Metal Mania"; */
     font-weight: normal;
     color: #333;
     text-align: center;
