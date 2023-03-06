@@ -19,7 +19,6 @@ body{
 
 
 #navbar{
-	/* background-color: #cc241d; */
 	margin: 0%;
 	padding: 0%;
 	height: 6rem;
@@ -29,7 +28,6 @@ body{
 
 
 #navBarImage{
-	/* margin: 0%; */
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -48,10 +46,8 @@ a{
 
 #onlineStoreBtn{
 	background-color: #eb813b;
-	/* right: 45%; */
 	margin: auto;
 	display: block;
-	/* position: absolute; */
 	border: none;
     border-radius: .3em;
     font-weight: bold;
